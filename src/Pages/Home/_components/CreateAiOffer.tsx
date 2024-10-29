@@ -20,7 +20,7 @@ import axios from "axios";
 import * as XLSX from "xlsx";
 import { toast } from "react-toastify";
 import { createPrompt } from "../prompt/prompt";
-import { xxbe_winner_11_99 } from "../../../Types/xxbe_winner_11_99";
+
 
 interface CreateAiOfferProps {
   open: boolean;
@@ -57,7 +57,7 @@ const CreateAiOffer: React.FC<CreateAiOfferProps> = ({
   };
 
   const createOfferRequest = async () => {
-    const API_KEY: string = xxbe_winner_11_99;
+    //const API_KEY = null;
 
     const inputText = createPrompt(data1, data2);
 
